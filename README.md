@@ -4,15 +4,15 @@
 
 SceneTrace detects objects in an image or recorded video, labels them, assigns lightweight track IDs, and logs persistent observations: first detections, missing detections, and changes in left/right spatial relationships. Every event links to an annotated evidence frame.
 
-![SceneTrace controlled video demonstration](examples/demo.gif)
+![SceneTrace on real pedestrian video](examples/natural_motion/demo.gif)
 
-*Controlled demo: a translated example photo, a blank interval, and restored detections. [Full-resolution image output](examples/image_result/preview.jpg).*
+*Real pedestrian footage: people move, overlap, and leave the frame. [Read the three-case visual review](examples/natural_motion/README.md), including an identity-tracking failure. The original [controlled demo](examples/demo.gif) remains available for reproducible empty-frame testing.*
 
 ## Why this project
 
 This independent project is inspired by my experience with video data quality checks and qualitative model evaluation at an AI video-reasoning startup. That work made the connection between a visual claim and its supporting evidence especially relevant to me.
 
-SceneTrace explores a small part of that problem: instead of stopping at bounding boxes, it turns detections into explicit observations that a person can inspect against the original frames. It uses a public pretrained model and a public example image; it contains no company code, data, or internal evaluation system.
+SceneTrace explores a small part of that problem: instead of stopping at bounding boxes, it turns detections into explicit observations that a person can inspect against the original frames. It uses a public pretrained model, a public example image, and a CC0 pedestrian video; it contains no company code, data, or internal evaluation system.
 
 **Example:** a reviewer can find the time when an object was no longer detected, open the exact evidence frame, and decide whether this reflects occlusion, a missed detection, or an actual scene change. The program does not make that final judgment automatically.
 
@@ -48,6 +48,14 @@ On Windows, activate with `.venv\Scripts\activate` instead. The first run downlo
 python -m scenetrace examples/street.jpg --classes person,bus --output outputs/street
 ```
 
+### Real pedestrian video
+
+```bash
+python -m scenetrace examples/natural_motion/input.mp4 --classes person --stride 5 --output outputs/natural-motion
+```
+
+This 14.24-second clip tests natural motion and occlusion. See the [evaluation notes and paired evidence](examples/natural_motion/README.md) before interpreting track IDs as individual people.
+
 ### Included 8-second controlled video
 
 ```bash
@@ -81,7 +89,7 @@ Outputs must go to a **new or empty directory** to avoid overwriting a previous 
 | `report.json` | Settings, per-frame boxes/confidence/counts, and event records |
 | `evidence/frame_*.jpg` | Annotated frames supporting the events |
 
-Checked-in results: [image](examples/image_result/SUMMARY.md), [video timeline](examples/video_result/SUMMARY.md), [annotated video](examples/video_result/annotated.mp4), and [empty image](examples/empty_result/SUMMARY.md).
+Checked-in results: [natural-motion evaluation](examples/natural_motion/README.md), [real-video timeline](examples/natural_motion/result/SUMMARY.md), [image](examples/image_result/SUMMARY.md), [video timeline](examples/video_result/SUMMARY.md), [annotated video](examples/video_result/annotated.mp4), and [empty image](examples/empty_result/SUMMARY.md).
 
 ## How the pipeline works
 
@@ -98,6 +106,9 @@ For a 10 FPS clip with `--stride 2`, the analyzed interval is 0.2 seconds. The a
 
 ## Validation
 
+**Natural-motion case study.** A 14.24-second CC0 pedestrian video was analyzed at five frames per second: **72 analyzed frames and 140 events**. The [visual review](examples/natural_motion/README.md) inspects a foreground exit, a left/right ordering change, and a concrete identity switch. It includes source attribution, a source checksum, exact commands, paired evidence panels, and the full output. This is a qualitative test on one clip, not an accuracy benchmark; event counts are not counts of correct predictions or distinct people.
+
+**Controlled and empty-input checks.**
 The included real-image run detected **one bus and three people** at the configured threshold. The 8-second controlled clip produced **40 analyzed frames**, including **10 empty frames**, and **36 events**. These are observed outputs, not accuracy scores. Counts can differ across model/runtime versions and inference settings.
 
 The video is deliberately an **edited still-image test**: original photo, translated photo, blank interval, then restored photo. It validates video I/O, event persistence, missing-detection handling, recovery, and evidence export. It does **not** establish performance on natural motion. Its construction is fully available in [`scripts/make_demo.py`](scripts/make_demo.py); run `python scripts/make_demo.py` to recreate the inputs.
@@ -108,16 +119,16 @@ python -m pytest -q
 python scripts/verify_examples.py
 ```
 
-Tests cover empty detections, transient false positives, dropout tolerance, track identity, persistent relationship changes, and degenerate boxes. The example checker verifies the saved inference artifacts and video frame count. Synthetic box tests check event logic separately from model quality.
+Tests cover empty detections, transient false positives, dropout tolerance, track identity, persistent relationship changes, and degenerate boxes. The example checker verifies saved inference artifacts, decoded video frame counts, natural-video provenance, event totals, and review panels. Synthetic box tests check event logic separately from model quality.
 
 ## Limitations and next steps
 
 - Detector errors propagate to the timeline. **Not detected** does not mean an object physically disappeared; the included clip exposes intermittent detections of a partially visible person.
-- Track IDs can switch when similar objects cross, move quickly, or are occluded. A stronger tracker and manually annotated natural videos would be the next evaluation step.
+- Track IDs can switch when similar objects cross, move quickly, or are occluded. The natural-motion review demonstrates an actual identity switch. A stronger tracker and manually annotated trajectories would be the next evaluation step.
 - Left/right is calculated from box centers. Overlapping or large boxes can yield relationships that do not match a person's semantic description.
 - Thresholds and frame sampling trade responsiveness for stability. Brief events between sampled frames can be missed.
 - This is a transparent rule-based observation tool, not a general video reasoning model, a generated-video quality score, or a validated research benchmark.
-- Reports retain per-frame metadata in memory, so this version is intended for short clips. Natural-motion evaluation, streaming report writes, richer relations, and uncertainty visualization are future improvements.
+- Reports retain per-frame metadata in memory, so this version is intended for short clips. Broader natural-motion evaluation, streaming report writes, richer relations, and uncertainty visualization are future improvements.
 
 ## Source and license
 

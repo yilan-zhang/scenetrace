@@ -1,0 +1,141 @@
+frame,time_seconds,kind,track_ids,description,evidence
+5,0.2,first_detected,[1],person #1: detection confirmed,evidence/frame_000005.jpg
+5,0.2,first_detected,[2],person #2: detection confirmed,evidence/frame_000005.jpg
+5,0.2,first_detected,[3],person #3: detection confirmed,evidence/frame_000005.jpg
+5,0.2,first_detected,[5],person #5: detection confirmed,evidence/frame_000005.jpg
+10,0.4,relation_observed,"[1, 2]",person #1 right of person #2,evidence/frame_000010.jpg
+10,0.4,relation_observed,"[1, 3]",person #1 right of person #3,evidence/frame_000010.jpg
+10,0.4,relation_observed,"[1, 5]",person #1 right of person #5,evidence/frame_000010.jpg
+10,0.4,relation_observed,"[2, 3]",person #2 left of person #3,evidence/frame_000010.jpg
+10,0.4,relation_observed,"[2, 5]",person #2 left of person #5,evidence/frame_000010.jpg
+10,0.4,relation_observed,"[3, 5]",person #3 left of person #5,evidence/frame_000010.jpg
+20,0.8,first_detected,[6],person #6: detection confirmed,evidence/frame_000020.jpg
+25,1.0,relation_observed,"[1, 6]",person #1 right of person #6,evidence/frame_000025.jpg
+25,1.0,relation_observed,"[2, 6]",person #2 left of person #6,evidence/frame_000025.jpg
+25,1.0,relation_observed,"[3, 6]",person #3 left of person #6,evidence/frame_000025.jpg
+25,1.0,relation_observed,"[5, 6]",person #5 right of person #6,evidence/frame_000025.jpg
+60,2.4,first_detected,[7],person #7: detection confirmed,evidence/frame_000060.jpg
+65,2.6,first_detected,[8],person #8: detection confirmed,evidence/frame_000065.jpg
+65,2.6,relation_observed,"[2, 7]",person #2 left of person #7,evidence/frame_000065.jpg
+65,2.6,relation_observed,"[3, 7]",person #3 left of person #7,evidence/frame_000065.jpg
+65,2.6,relation_observed,"[5, 7]",person #5 left of person #7,evidence/frame_000065.jpg
+70,2.8,no_longer_detected,[1],person #1: not detected for 3 analyzed frames,evidence/frame_000070.jpg
+70,2.8,first_detected,[9],person #9: detection confirmed,evidence/frame_000070.jpg
+70,2.8,relation_observed,"[6, 7]",person #6 left of person #7,evidence/frame_000070.jpg
+75,3.0,relation_observed,"[2, 9]",person #2 left of person #9,evidence/frame_000075.jpg
+75,3.0,relation_observed,"[5, 9]",person #5 right of person #9,evidence/frame_000075.jpg
+75,3.0,relation_observed,"[6, 9]",person #6 right of person #9,evidence/frame_000075.jpg
+75,3.0,relation_observed,"[7, 9]",person #7 right of person #9,evidence/frame_000075.jpg
+80,3.2,no_longer_detected,[8],person #8: not detected for 3 analyzed frames,evidence/frame_000080.jpg
+80,3.2,no_longer_detected,[3],person #3: not detected for 3 analyzed frames,evidence/frame_000080.jpg
+90,3.6,no_longer_detected,[7],person #7: not detected for 3 analyzed frames,evidence/frame_000090.jpg
+100,4.0,first_detected,[10],person #10: detection confirmed,evidence/frame_000100.jpg
+100,4.0,first_detected,[11],person #11: detection confirmed,evidence/frame_000100.jpg
+100,4.0,first_detected,[13],person #13: detection confirmed,evidence/frame_000100.jpg
+105,4.2,relation_observed,"[2, 10]",person #2 left of person #10,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[2, 11]",person #2 left of person #11,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[6, 10]",person #6 left of person #10,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[6, 11]",person #6 left of person #11,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[9, 10]",person #9 left of person #10,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[9, 11]",person #9 left of person #11,evidence/frame_000105.jpg
+105,4.2,relation_observed,"[10, 11]",person #10 right of person #11,evidence/frame_000105.jpg
+110,4.4,relation_observed,"[5, 10]",person #5 right of person #10,evidence/frame_000110.jpg
+110,4.4,relation_observed,"[5, 11]",person #5 right of person #11,evidence/frame_000110.jpg
+115,4.6,no_longer_detected,[13],person #13: not detected for 3 analyzed frames,evidence/frame_000115.jpg
+125,5.0,relation_changed,"[6, 9]",person #6 left of person #9 (was right of),evidence/frame_000125.jpg
+130,5.2,first_detected,[14],person #14: detection confirmed,evidence/frame_000130.jpg
+135,5.4,no_longer_detected,[10],person #10: not detected for 3 analyzed frames,evidence/frame_000135.jpg
+135,5.4,relation_observed,"[5, 14]",person #5 right of person #14,evidence/frame_000135.jpg
+135,5.4,relation_observed,"[6, 14]",person #6 right of person #14,evidence/frame_000135.jpg
+135,5.4,relation_observed,"[9, 14]",person #9 right of person #14,evidence/frame_000135.jpg
+135,5.4,relation_observed,"[11, 14]",person #11 right of person #14,evidence/frame_000135.jpg
+145,5.8,first_detected,[16],person #16: detection confirmed,evidence/frame_000145.jpg
+150,6.0,first_detected,[15],person #15: detection confirmed,evidence/frame_000150.jpg
+150,6.0,relation_observed,"[2, 16]",person #2 left of person #16,evidence/frame_000150.jpg
+150,6.0,relation_observed,"[5, 16]",person #5 right of person #16,evidence/frame_000150.jpg
+150,6.0,relation_observed,"[6, 16]",person #6 left of person #16,evidence/frame_000150.jpg
+150,6.0,relation_observed,"[9, 16]",person #9 right of person #16,evidence/frame_000150.jpg
+155,6.2,relation_observed,"[5, 15]",person #5 right of person #15,evidence/frame_000155.jpg
+155,6.2,relation_observed,"[6, 15]",person #6 right of person #15,evidence/frame_000155.jpg
+155,6.2,relation_observed,"[9, 15]",person #9 right of person #15,evidence/frame_000155.jpg
+155,6.2,relation_observed,"[15, 16]",person #15 left of person #16,evidence/frame_000155.jpg
+160,6.4,relation_observed,"[14, 15]",person #14 left of person #15,evidence/frame_000160.jpg
+160,6.4,relation_observed,"[14, 16]",person #14 left of person #16,evidence/frame_000160.jpg
+165,6.6,no_longer_detected,[11],person #11: not detected for 3 analyzed frames,evidence/frame_000165.jpg
+175,7.0,first_detected,[17],person #17: detection confirmed,evidence/frame_000175.jpg
+175,7.0,first_detected,[18],person #18: detection confirmed,evidence/frame_000175.jpg
+180,7.2,relation_observed,"[5, 17]",person #5 right of person #17,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[5, 18]",person #5 right of person #18,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[6, 17]",person #6 left of person #17,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[6, 18]",person #6 right of person #18,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[15, 17]",person #15 left of person #17,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[16, 17]",person #16 left of person #17,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[16, 18]",person #16 right of person #18,evidence/frame_000180.jpg
+180,7.2,relation_observed,"[17, 18]",person #17 right of person #18,evidence/frame_000180.jpg
+185,7.4,no_longer_detected,[9],person #9: not detected for 3 analyzed frames,evidence/frame_000185.jpg
+185,7.4,no_longer_detected,[14],person #14: not detected for 3 analyzed frames,evidence/frame_000185.jpg
+185,7.4,relation_observed,"[15, 18]",person #15 right of person #18,evidence/frame_000185.jpg
+205,8.2,relation_observed,"[2, 15]",person #2 left of person #15,evidence/frame_000205.jpg
+205,8.2,relation_observed,"[2, 17]",person #2 left of person #17,evidence/frame_000205.jpg
+205,8.2,relation_observed,"[2, 18]",person #2 aligned person #18,evidence/frame_000205.jpg
+215,8.6,first_detected,[19],person #19: detection confirmed,evidence/frame_000215.jpg
+215,8.6,first_detected,[21],person #21: detection confirmed,evidence/frame_000215.jpg
+220,8.8,no_longer_detected,[16],person #16: not detected for 3 analyzed frames,evidence/frame_000220.jpg
+220,8.8,relation_observed,"[5, 19]",person #5 right of person #19,evidence/frame_000220.jpg
+220,8.8,relation_observed,"[6, 19]",person #6 right of person #19,evidence/frame_000220.jpg
+220,8.8,relation_observed,"[17, 19]",person #17 right of person #19,evidence/frame_000220.jpg
+225,9.0,first_detected,[20],person #20: detection confirmed,evidence/frame_000225.jpg
+230,9.2,no_longer_detected,[18],person #18: not detected for 3 analyzed frames,evidence/frame_000230.jpg
+230,9.2,relation_observed,"[5, 20]",person #5 left of person #20,evidence/frame_000230.jpg
+230,9.2,relation_observed,"[17, 20]",person #17 left of person #20,evidence/frame_000230.jpg
+240,9.6,relation_observed,"[2, 20]",person #2 left of person #20,evidence/frame_000240.jpg
+245,9.8,first_detected,[22],person #22: detection confirmed,evidence/frame_000245.jpg
+245,9.8,relation_observed,"[5, 21]",person #5 right of person #21,evidence/frame_000245.jpg
+245,9.8,relation_observed,"[15, 21]",person #15 left of person #21,evidence/frame_000245.jpg
+245,9.8,relation_observed,"[17, 21]",person #17 right of person #21,evidence/frame_000245.jpg
+245,9.8,relation_observed,"[19, 21]",person #19 aligned person #21,evidence/frame_000245.jpg
+250,10.0,no_longer_detected,[6],person #6: not detected for 3 analyzed frames,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[5, 22]",person #5 right of person #22,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[15, 19]",person #15 left of person #19,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[15, 22]",person #15 right of person #22,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[17, 22]",person #17 right of person #22,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[19, 22]",person #19 right of person #22,evidence/frame_000250.jpg
+250,10.0,relation_observed,"[21, 22]",person #21 right of person #22,evidence/frame_000250.jpg
+255,10.2,relation_observed,"[2, 19]",person #2 left of person #19,evidence/frame_000255.jpg
+255,10.2,relation_observed,"[2, 21]",person #2 left of person #21,evidence/frame_000255.jpg
+255,10.2,relation_observed,"[2, 22]",person #2 left of person #22,evidence/frame_000255.jpg
+265,10.6,first_detected,[23],person #23: detection confirmed,evidence/frame_000265.jpg
+270,10.8,no_longer_detected,[20],person #20: not detected for 3 analyzed frames,evidence/frame_000270.jpg
+270,10.8,no_longer_detected,[21],person #21: not detected for 3 analyzed frames,evidence/frame_000270.jpg
+270,10.8,no_longer_detected,[15],person #15: not detected for 3 analyzed frames,evidence/frame_000270.jpg
+280,11.2,no_longer_detected,[23],person #23: not detected for 3 analyzed frames,evidence/frame_000280.jpg
+280,11.2,first_detected,[24],person #24: detection confirmed,evidence/frame_000280.jpg
+285,11.4,first_detected,[26],person #26: detection confirmed,evidence/frame_000285.jpg
+285,11.4,relation_observed,"[5, 24]",person #5 right of person #24,evidence/frame_000285.jpg
+285,11.4,relation_observed,"[17, 24]",person #17 right of person #24,evidence/frame_000285.jpg
+285,11.4,relation_observed,"[19, 24]",person #19 right of person #24,evidence/frame_000285.jpg
+295,11.8,no_longer_detected,[2],person #2: not detected for 3 analyzed frames,evidence/frame_000295.jpg
+295,11.8,first_detected,[25],person #25: detection confirmed,evidence/frame_000295.jpg
+300,12.0,no_longer_detected,[26],person #26: not detected for 3 analyzed frames,evidence/frame_000300.jpg
+300,12.0,relation_observed,"[5, 25]",person #5 right of person #25,evidence/frame_000300.jpg
+300,12.0,relation_observed,"[17, 25]",person #17 right of person #25,evidence/frame_000300.jpg
+300,12.0,relation_observed,"[19, 25]",person #19 left of person #25,evidence/frame_000300.jpg
+300,12.0,relation_observed,"[22, 25]",person #22 left of person #25,evidence/frame_000300.jpg
+305,12.2,first_detected,[28],person #28: detection confirmed,evidence/frame_000305.jpg
+305,12.2,relation_observed,"[22, 24]",person #22 right of person #24,evidence/frame_000305.jpg
+305,12.2,relation_observed,"[24, 25]",person #24 left of person #25,evidence/frame_000305.jpg
+310,12.4,relation_observed,"[5, 28]",person #5 right of person #28,evidence/frame_000310.jpg
+310,12.4,relation_observed,"[17, 28]",person #17 right of person #28,evidence/frame_000310.jpg
+310,12.4,relation_observed,"[19, 28]",person #19 left of person #28,evidence/frame_000310.jpg
+310,12.4,relation_observed,"[22, 28]",person #22 left of person #28,evidence/frame_000310.jpg
+310,12.4,relation_observed,"[24, 28]",person #24 left of person #28,evidence/frame_000310.jpg
+310,12.4,relation_observed,"[25, 28]",person #25 left of person #28,evidence/frame_000310.jpg
+330,13.2,first_detected,[30],person #30: detection confirmed,evidence/frame_000330.jpg
+335,13.4,relation_observed,"[5, 30]",person #5 right of person #30,evidence/frame_000335.jpg
+335,13.4,relation_observed,"[17, 30]",person #17 right of person #30,evidence/frame_000335.jpg
+335,13.4,relation_observed,"[19, 30]",person #19 right of person #30,evidence/frame_000335.jpg
+335,13.4,relation_changed,"[25, 28]",person #25 aligned person #28 (was left of),evidence/frame_000335.jpg
+335,13.4,relation_observed,"[25, 30]",person #25 right of person #30,evidence/frame_000335.jpg
+335,13.4,relation_observed,"[28, 30]",person #28 right of person #30,evidence/frame_000335.jpg
+340,13.6,no_longer_detected,[22],person #22: not detected for 3 analyzed frames,evidence/frame_000340.jpg
+345,13.8,relation_changed,"[25, 28]",person #25 left of person #28 (was aligned),evidence/frame_000345.jpg

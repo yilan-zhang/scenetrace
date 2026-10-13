@@ -6,4 +6,6 @@
 - **Derived demo**: `examples/controlled_clip.mp4` resizes/translates the example photo and inserts a blank interval. It is an explicitly synthetic temporal test, not independently collected video. The script in `scripts/make_demo.py` documents all transformations.
 - **Other dependencies**: OpenCV, NumPy, PyTorch, and the remaining packages retain their upstream licenses; their code is installed separately and not bundled in the submission archive.
 
+- **Natural-motion video**: *Big City Life*, Coverr (2015), obtained from https://commons.wikimedia.org/wiki/File:Big_City_Life.webm under the file's recorded CC0 1.0 dedication (https://creativecommons.org/publicdomain/zero/1.0/). The archived original is included as `examples/natural_motion/source.webm`; the resized input, annotated outputs, GIF, and review panels are derived from it. See `examples/natural_motion/README.md` for checksum, transformation, and source details. This media provenance is separate from the AGPL license on project code.
+
 No private research dataset, company repository, or internal system is used.
