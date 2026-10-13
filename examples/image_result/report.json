@@ -1,0 +1,189 @@
+{
+  "source": "street.jpg",
+  "model": "yolov8n.pt",
+  "settings": {
+    "confidence": 0.35,
+    "classes": [
+      "bus",
+      "person"
+    ],
+    "stride": 1,
+    "confirm_frames": 1,
+    "max_missing": 3,
+    "dead_zone_fraction": 0.06,
+    "max_detections": 12,
+    "device": "cpu"
+  },
+  "source_fps": 1.0,
+  "analyzed_frames": 1,
+  "empty_frames": 0,
+  "peak_visible_counts": {
+    "bus": 1,
+    "person": 3
+  },
+  "events": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "first_detected",
+      "track_ids": [
+        1
+      ],
+      "description": "bus #1: detection confirmed",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "first_detected",
+      "track_ids": [
+        2
+      ],
+      "description": "person #2: detection confirmed",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "first_detected",
+      "track_ids": [
+        3
+      ],
+      "description": "person #3: detection confirmed",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "first_detected",
+      "track_ids": [
+        4
+      ],
+      "description": "person #4: detection confirmed",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        2
+      ],
+      "description": "bus #1 right of person #2",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        3
+      ],
+      "description": "bus #1 left of person #3",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        4
+      ],
+      "description": "bus #1 right of person #4",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        3
+      ],
+      "description": "person #2 left of person #3",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        4
+      ],
+      "description": "person #2 left of person #4",
+      "evidence": "evidence/frame_000000.jpg"
+    },
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "kind": "relation_observed",
+      "track_ids": [
+        3,
+        4
+      ],
+      "description": "person #3 right of person #4",
+      "evidence": "evidence/frame_000000.jpg"
+    }
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8729,
+          "box_xyxy": [
+            22.955881118774414,
+            231.13600158691406,
+            804.8677368164062,
+            756.84619140625
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8653,
+          "box_xyxy": [
+            48.49164581298828,
+            398.5798034667969,
+            245.39675903320312,
+            902.7569580078125
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.854,
+          "box_xyxy": [
+            669.4163818359375,
+            392.8653259277344,
+            809.720703125,
+            877.0936889648438
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8252,
+          "box_xyxy": [
+            221.55894470214844,
+            405.8337707519531,
+            345.0008850097656,
+            857.5508422851562
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Detection observations only. A missing detection does not prove a physical disappearance. Left/right uses 2D box centers."
+}

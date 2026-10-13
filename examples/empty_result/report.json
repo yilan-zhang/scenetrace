@@ -1,0 +1,31 @@
+{
+  "source": "empty.png",
+  "model": "yolov8n.pt",
+  "settings": {
+    "confidence": 0.35,
+    "classes": [
+      "bus",
+      "person"
+    ],
+    "stride": 1,
+    "confirm_frames": 1,
+    "max_missing": 3,
+    "dead_zone_fraction": 0.06,
+    "max_detections": 12,
+    "device": "cpu"
+  },
+  "source_fps": 1.0,
+  "analyzed_frames": 1,
+  "empty_frames": 1,
+  "peak_visible_counts": {},
+  "events": [],
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "counts": {},
+      "detections": []
+    }
+  ],
+  "interpretation": "Detection observations only. A missing detection does not prove a physical disappearance. Left/right uses 2D box centers."
+}

@@ -1,0 +1,2199 @@
+{
+  "source": "controlled_clip.mp4",
+  "model": "yolov8n.pt",
+  "settings": {
+    "confidence": 0.35,
+    "classes": [
+      "bus",
+      "person"
+    ],
+    "stride": 2,
+    "confirm_frames": 2,
+    "max_missing": 3,
+    "dead_zone_fraction": 0.06,
+    "max_detections": 12,
+    "device": "cpu"
+  },
+  "source_fps": 10.0,
+  "analyzed_frames": 40,
+  "empty_frames": 10,
+  "peak_visible_counts": {
+    "bus": 1,
+    "person": 4
+  },
+  "events": [
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "kind": "first_detected",
+      "track_ids": [
+        1
+      ],
+      "description": "bus #1: detection confirmed",
+      "evidence": "evidence/frame_000002.jpg"
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "kind": "first_detected",
+      "track_ids": [
+        2
+      ],
+      "description": "person #2: detection confirmed",
+      "evidence": "evidence/frame_000002.jpg"
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "kind": "first_detected",
+      "track_ids": [
+        3
+      ],
+      "description": "person #3: detection confirmed",
+      "evidence": "evidence/frame_000002.jpg"
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "kind": "first_detected",
+      "track_ids": [
+        4
+      ],
+      "description": "person #4: detection confirmed",
+      "evidence": "evidence/frame_000002.jpg"
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "kind": "first_detected",
+      "track_ids": [
+        5
+      ],
+      "description": "person #5: detection confirmed",
+      "evidence": "evidence/frame_000002.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        2
+      ],
+      "description": "bus #1 right of person #2",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        3
+      ],
+      "description": "bus #1 right of person #3",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        4
+      ],
+      "description": "bus #1 left of person #4",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        5
+      ],
+      "description": "bus #1 right of person #5",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        3
+      ],
+      "description": "person #2 left of person #3",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        4
+      ],
+      "description": "person #2 left of person #4",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        5
+      ],
+      "description": "person #2 right of person #5",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        3,
+        4
+      ],
+      "description": "person #3 left of person #4",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        3,
+        5
+      ],
+      "description": "person #3 right of person #5",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        4,
+        5
+      ],
+      "description": "person #4 right of person #5",
+      "evidence": "evidence/frame_000004.jpg"
+    },
+    {
+      "frame": 16,
+      "time_seconds": 1.6,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        5
+      ],
+      "description": "person #5: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000016.jpg"
+    },
+    {
+      "frame": 32,
+      "time_seconds": 3.2,
+      "kind": "first_detected",
+      "track_ids": [
+        6
+      ],
+      "description": "person #6: detection confirmed",
+      "evidence": "evidence/frame_000032.jpg"
+    },
+    {
+      "frame": 34,
+      "time_seconds": 3.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        1,
+        6
+      ],
+      "description": "bus #1 right of person #6",
+      "evidence": "evidence/frame_000034.jpg"
+    },
+    {
+      "frame": 34,
+      "time_seconds": 3.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        2,
+        6
+      ],
+      "description": "person #2 right of person #6",
+      "evidence": "evidence/frame_000034.jpg"
+    },
+    {
+      "frame": 34,
+      "time_seconds": 3.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        3,
+        6
+      ],
+      "description": "person #3 right of person #6",
+      "evidence": "evidence/frame_000034.jpg"
+    },
+    {
+      "frame": 34,
+      "time_seconds": 3.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        4,
+        6
+      ],
+      "description": "person #4 right of person #6",
+      "evidence": "evidence/frame_000034.jpg"
+    },
+    {
+      "frame": 42,
+      "time_seconds": 4.2,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        4
+      ],
+      "description": "person #4: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000042.jpg"
+    },
+    {
+      "frame": 44,
+      "time_seconds": 4.4,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        1
+      ],
+      "description": "bus #1: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000044.jpg"
+    },
+    {
+      "frame": 44,
+      "time_seconds": 4.4,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        2
+      ],
+      "description": "person #2: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000044.jpg"
+    },
+    {
+      "frame": 44,
+      "time_seconds": 4.4,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        3
+      ],
+      "description": "person #3: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000044.jpg"
+    },
+    {
+      "frame": 44,
+      "time_seconds": 4.4,
+      "kind": "no_longer_detected",
+      "track_ids": [
+        6
+      ],
+      "description": "person #6: not detected for 3 analyzed frames",
+      "evidence": "evidence/frame_000044.jpg"
+    },
+    {
+      "frame": 62,
+      "time_seconds": 6.2,
+      "kind": "first_detected",
+      "track_ids": [
+        7
+      ],
+      "description": "bus #7: detection confirmed",
+      "evidence": "evidence/frame_000062.jpg"
+    },
+    {
+      "frame": 62,
+      "time_seconds": 6.2,
+      "kind": "first_detected",
+      "track_ids": [
+        8
+      ],
+      "description": "person #8: detection confirmed",
+      "evidence": "evidence/frame_000062.jpg"
+    },
+    {
+      "frame": 62,
+      "time_seconds": 6.2,
+      "kind": "first_detected",
+      "track_ids": [
+        9
+      ],
+      "description": "person #9: detection confirmed",
+      "evidence": "evidence/frame_000062.jpg"
+    },
+    {
+      "frame": 62,
+      "time_seconds": 6.2,
+      "kind": "first_detected",
+      "track_ids": [
+        10
+      ],
+      "description": "person #10: detection confirmed",
+      "evidence": "evidence/frame_000062.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        7,
+        8
+      ],
+      "description": "bus #7 right of person #8",
+      "evidence": "evidence/frame_000064.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        7,
+        9
+      ],
+      "description": "bus #7 left of person #9",
+      "evidence": "evidence/frame_000064.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        7,
+        10
+      ],
+      "description": "bus #7 right of person #10",
+      "evidence": "evidence/frame_000064.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        8,
+        9
+      ],
+      "description": "person #8 left of person #9",
+      "evidence": "evidence/frame_000064.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        8,
+        10
+      ],
+      "description": "person #8 left of person #10",
+      "evidence": "evidence/frame_000064.jpg"
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "kind": "relation_observed",
+      "track_ids": [
+        9,
+        10
+      ],
+      "description": "person #9 right of person #10",
+      "evidence": "evidence/frame_000064.jpg"
+    }
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8863,
+          "box_xyxy": [
+            14.949554443359375,
+            137.1341552734375,
+            479.75750732421875,
+            444.5006103515625
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8575,
+          "box_xyxy": [
+            29.42181396484375,
+            235.23597717285156,
+            146.027099609375,
+            535.4227294921875
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8252,
+          "box_xyxy": [
+            131.34048461914062,
+            240.79212951660156,
+            204.3948974609375,
+            508.8662109375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8214,
+          "box_xyxy": [
+            395.2945861816406,
+            224.40863037109375,
+            479.8779602050781,
+            516.7670288085938
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.4414,
+          "box_xyxy": [
+            0.0,
+            326.60601806640625,
+            35.03017044067383,
+            519.183837890625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8841,
+          "box_xyxy": [
+            14.696502685546875,
+            137.28216552734375,
+            478.4898376464844,
+            449.5892333984375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8647,
+          "box_xyxy": [
+            28.679885864257812,
+            236.1767578125,
+            145.6256103515625,
+            534.8616943359375
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8344,
+          "box_xyxy": [
+            130.84371948242188,
+            240.64596557617188,
+            204.25753784179688,
+            508.2936096191406
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8351,
+          "box_xyxy": [
+            395.32623291015625,
+            225.8531951904297,
+            479.8936767578125,
+            517.6557006835938
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.3507,
+          "box_xyxy": [
+            0.0,
+            326.73675537109375,
+            36.5078010559082,
+            518.1600952148438
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.4,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8834,
+          "box_xyxy": [
+            14.633270263671875,
+            137.31536865234375,
+            478.504150390625,
+            449.58349609375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8643,
+          "box_xyxy": [
+            28.694351196289062,
+            236.17657470703125,
+            145.62449645996094,
+            534.8636474609375
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8342,
+          "box_xyxy": [
+            130.840087890625,
+            240.6388702392578,
+            204.246826171875,
+            508.28826904296875
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8349,
+          "box_xyxy": [
+            395.3305969238281,
+            225.84588623046875,
+            479.8939514160156,
+            517.641845703125
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.3562,
+          "box_xyxy": [
+            0.0,
+            326.76025390625,
+            36.46641159057617,
+            518.1937255859375
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.6,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            14.636260986328125,
+            137.31748962402344,
+            478.4847717285156,
+            449.5733642578125
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8643,
+          "box_xyxy": [
+            28.694263458251953,
+            236.1759033203125,
+            145.6243133544922,
+            534.863525390625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8342,
+          "box_xyxy": [
+            130.84031677246094,
+            240.6383819580078,
+            204.24684143066406,
+            508.28802490234375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.835,
+          "box_xyxy": [
+            395.330810546875,
+            225.84698486328125,
+            479.8941650390625,
+            517.641357421875
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.3562,
+          "box_xyxy": [
+            0.0,
+            326.7608642578125,
+            36.46722412109375,
+            518.1939697265625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "time_seconds": 0.8,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            14.6385498046875,
+            137.31561279296875,
+            478.4897766113281,
+            449.5738525390625
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8643,
+          "box_xyxy": [
+            28.69430923461914,
+            236.17572021484375,
+            145.62423706054688,
+            534.8634643554688
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8342,
+          "box_xyxy": [
+            130.84056091308594,
+            240.6383056640625,
+            204.24668884277344,
+            508.28802490234375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8349,
+          "box_xyxy": [
+            395.33062744140625,
+            225.84454345703125,
+            479.89410400390625,
+            517.6414794921875
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.3562,
+          "box_xyxy": [
+            0.0,
+            326.76177978515625,
+            36.46725845336914,
+            518.1939086914062
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "time_seconds": 1.0,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            14.639434814453125,
+            137.31344604492188,
+            478.4931335449219,
+            449.5753479003906
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8643,
+          "box_xyxy": [
+            28.694347381591797,
+            236.17608642578125,
+            145.6242218017578,
+            534.863525390625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8342,
+          "box_xyxy": [
+            130.84063720703125,
+            240.63858032226562,
+            204.24652099609375,
+            508.2880554199219
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8349,
+          "box_xyxy": [
+            395.33062744140625,
+            225.8431396484375,
+            479.89404296875,
+            517.6416015625
+          ]
+        },
+        {
+          "track_id": 5,
+          "label": "person",
+          "confidence": 0.3562,
+          "box_xyxy": [
+            0.0,
+            326.7623291015625,
+            36.46721267700195,
+            518.1939697265625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 12,
+      "time_seconds": 1.2,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8834,
+          "box_xyxy": [
+            13.3590087890625,
+            137.58251953125,
+            476.3138427734375,
+            450.0989990234375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8641,
+          "box_xyxy": [
+            28.972747802734375,
+            235.99432373046875,
+            145.13453674316406,
+            534.6343994140625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8343,
+          "box_xyxy": [
+            130.7748260498047,
+            240.7349395751953,
+            204.37998962402344,
+            508.54461669921875
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8461,
+          "box_xyxy": [
+            396.614501953125,
+            227.43389892578125,
+            479.93328857421875,
+            517.5767822265625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 14,
+      "time_seconds": 1.4,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.37872314453125,
+            137.6111602783203,
+            475.88616943359375,
+            450.05841064453125
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97515869140625,
+            235.9851837158203,
+            145.1370391845703,
+            534.6526489257812
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8336,
+          "box_xyxy": [
+            130.76913452148438,
+            240.7286834716797,
+            204.38211059570312,
+            508.53912353515625
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8471,
+          "box_xyxy": [
+            396.6224365234375,
+            227.4254150390625,
+            479.9381103515625,
+            517.6004028320312
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 16,
+      "time_seconds": 1.6,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.38604736328125,
+            137.6105499267578,
+            476.02490234375,
+            450.06622314453125
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.7694091796875,
+            240.72833251953125,
+            204.38092041015625,
+            508.5394287109375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.621337890625,
+            227.392578125,
+            479.9371337890625,
+            517.6010131835938
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 18,
+      "time_seconds": 1.8,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.3858642578125,
+            137.61041259765625,
+            476.02984619140625,
+            450.0677490234375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.76943969726562,
+            240.7283477783203,
+            204.38088989257812,
+            508.53936767578125
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.6221923828125,
+            227.39837646484375,
+            479.93731689453125,
+            517.601318359375
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "time_seconds": 2.0,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.38616943359375,
+            137.6099853515625,
+            476.0174560546875,
+            450.06976318359375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97494888305664,
+            235.984375,
+            145.1368408203125,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.7696533203125,
+            240.7282257080078,
+            204.3809814453125,
+            508.53936767578125
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.6219177246094,
+            227.396484375,
+            479.9372863769531,
+            517.6007690429688
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 22,
+      "time_seconds": 2.2,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8756,
+          "box_xyxy": [
+            21.3533935546875,
+            137.20242309570312,
+            475.65106201171875,
+            448.7644348144531
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.852,
+          "box_xyxy": [
+            31.819164276123047,
+            235.755859375,
+            149.3298797607422,
+            536.3181762695312
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8367,
+          "box_xyxy": [
+            135.45947265625,
+            240.57925415039062,
+            209.349609375,
+            508.7453918457031
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.8244,
+          "box_xyxy": [
+            401.3052673339844,
+            232.00347900390625,
+            479.8316955566406,
+            518.2864990234375
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 24,
+      "time_seconds": 2.4,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8957,
+          "box_xyxy": [
+            21.1744384765625,
+            137.87908935546875,
+            477.696044921875,
+            449.958251953125
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8509,
+          "box_xyxy": [
+            38.00655746459961,
+            235.5530548095703,
+            153.90292358398438,
+            535.6766967773438
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8516,
+          "box_xyxy": [
+            139.36032104492188,
+            240.4864501953125,
+            212.73733520507812,
+            508.58441162109375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5554,
+          "box_xyxy": [
+            404.1527099609375,
+            217.74993896484375,
+            479.8079833984375,
+            519.0819702148438
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 26,
+      "time_seconds": 2.6,
+      "counts": {
+        "person": 4,
+        "bus": 1
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8749,
+          "box_xyxy": [
+            22.658203125,
+            137.0159912109375,
+            477.9140625,
+            453.58807373046875
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.885,
+          "box_xyxy": [
+            41.68264389038086,
+            234.80682373046875,
+            159.01031494140625,
+            536.5884399414062
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8594,
+          "box_xyxy": [
+            142.98672485351562,
+            241.43373107910156,
+            216.16555786132812,
+            508.27490234375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5199,
+          "box_xyxy": [
+            408.39178466796875,
+            265.58587646484375,
+            479.50726318359375,
+            518.7269287109375
+          ]
+        },
+        {
+          "track_id": 6,
+          "label": "person",
+          "confidence": 0.3595,
+          "box_xyxy": [
+            12.952812194824219,
+            337.58642578125,
+            45.295204162597656,
+            515.6055908203125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 28,
+      "time_seconds": 2.8,
+      "counts": {
+        "person": 3,
+        "bus": 1
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8742,
+          "box_xyxy": [
+            31.189727783203125,
+            137.495849609375,
+            478.79736328125,
+            459.21148681640625
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8791,
+          "box_xyxy": [
+            45.866485595703125,
+            235.22540283203125,
+            161.23867797851562,
+            536.3572387695312
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8837,
+          "box_xyxy": [
+            147.14163208007812,
+            241.56991577148438,
+            219.54714965820312,
+            507.3761901855469
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5234,
+          "box_xyxy": [
+            411.0362548828125,
+            291.7088623046875,
+            479.8756103515625,
+            519.280029296875
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 30,
+      "time_seconds": 3.0,
+      "counts": {
+        "person": 4,
+        "bus": 1
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8775,
+          "box_xyxy": [
+            37.21467590332031,
+            136.13856506347656,
+            478.80792236328125,
+            453.377685546875
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8742,
+          "box_xyxy": [
+            48.74778747558594,
+            234.7265625,
+            164.88259887695312,
+            536.48876953125
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8926,
+          "box_xyxy": [
+            151.2109375,
+            242.258544921875,
+            224.384521484375,
+            508.0924072265625
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.539,
+          "box_xyxy": [
+            415.23199462890625,
+            313.6231689453125,
+            479.88262939453125,
+            518.6287231445312
+          ]
+        },
+        {
+          "track_id": 6,
+          "label": "person",
+          "confidence": 0.4447,
+          "box_xyxy": [
+            20.100236892700195,
+            333.69854736328125,
+            52.75492858886719,
+            515.21923828125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 32,
+      "time_seconds": 3.2,
+      "counts": {
+        "person": 4,
+        "bus": 1
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8849,
+          "box_xyxy": [
+            41.49114990234375,
+            137.77560424804688,
+            480.0,
+            448.8144226074219
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8882,
+          "box_xyxy": [
+            54.502323150634766,
+            236.78802490234375,
+            169.65216064453125,
+            532.9434814453125
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.853,
+          "box_xyxy": [
+            155.46502685546875,
+            241.34170532226562,
+            228.3106689453125,
+            508.3012390136719
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5084,
+          "box_xyxy": [
+            420.0521240234375,
+            341.81439208984375,
+            479.665283203125,
+            516.80224609375
+          ]
+        },
+        {
+          "track_id": 6,
+          "label": "person",
+          "confidence": 0.4346,
+          "box_xyxy": [
+            24.568246841430664,
+            339.38232421875,
+            57.21068572998047,
+            515.2537841796875
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 34,
+      "time_seconds": 3.4,
+      "counts": {
+        "bus": 1,
+        "person": 4
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8849,
+          "box_xyxy": [
+            39.391021728515625,
+            136.02838134765625,
+            478.5191345214844,
+            453.81536865234375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8801,
+          "box_xyxy": [
+            57.294132232666016,
+            235.7057647705078,
+            173.47607421875,
+            534.4225463867188
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8177,
+          "box_xyxy": [
+            159.29161071777344,
+            241.54364013671875,
+            233.37965393066406,
+            508.82415771484375
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5496,
+          "box_xyxy": [
+            424.3901672363281,
+            363.4224853515625,
+            479.7023010253906,
+            519.0997314453125
+          ]
+        },
+        {
+          "track_id": 6,
+          "label": "person",
+          "confidence": 0.3806,
+          "box_xyxy": [
+            27.85696029663086,
+            328.63226318359375,
+            61.40409469604492,
+            523.311767578125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 36,
+      "time_seconds": 3.6,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8928,
+          "box_xyxy": [
+            45.623443603515625,
+            136.9794921875,
+            478.6562194824219,
+            454.8607177734375
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8653,
+          "box_xyxy": [
+            61.047760009765625,
+            235.99070739746094,
+            177.11209106445312,
+            534.9256591796875
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8362,
+          "box_xyxy": [
+            162.931396484375,
+            240.75198364257812,
+            236.50555419921875,
+            508.6141662597656
+          ]
+        },
+        {
+          "track_id": 4,
+          "label": "person",
+          "confidence": 0.5353,
+          "box_xyxy": [
+            429.01806640625,
+            375.80279541015625,
+            479.6976318359375,
+            519.37939453125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 38,
+      "time_seconds": 3.8,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 1,
+          "label": "bus",
+          "confidence": 0.8974,
+          "box_xyxy": [
+            50.66630554199219,
+            136.7779541015625,
+            479.17327880859375,
+            457.467041015625
+          ]
+        },
+        {
+          "track_id": 2,
+          "label": "person",
+          "confidence": 0.8475,
+          "box_xyxy": [
+            64.32426452636719,
+            235.082763671875,
+            182.07363891601562,
+            536.4339599609375
+          ]
+        },
+        {
+          "track_id": 3,
+          "label": "person",
+          "confidence": 0.8391,
+          "box_xyxy": [
+            167.45504760742188,
+            240.61663818359375,
+            241.01138305664062,
+            508.8179931640625
+          ]
+        },
+        {
+          "track_id": 6,
+          "label": "person",
+          "confidence": 0.4496,
+          "box_xyxy": [
+            35.804710388183594,
+            329.66412353515625,
+            69.1887435913086,
+            514.970947265625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 40,
+      "time_seconds": 4.0,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 42,
+      "time_seconds": 4.2,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 44,
+      "time_seconds": 4.4,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 46,
+      "time_seconds": 4.6,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 48,
+      "time_seconds": 4.8,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 50,
+      "time_seconds": 5.0,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 52,
+      "time_seconds": 5.2,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 54,
+      "time_seconds": 5.4,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 56,
+      "time_seconds": 5.6,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 58,
+      "time_seconds": 5.8,
+      "counts": {},
+      "detections": []
+    },
+    {
+      "frame": 60,
+      "time_seconds": 6.0,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8834,
+          "box_xyxy": [
+            13.3590087890625,
+            137.58251953125,
+            476.3138427734375,
+            450.0989990234375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.8641,
+          "box_xyxy": [
+            28.972747802734375,
+            235.99432373046875,
+            145.13453674316406,
+            534.6343994140625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8461,
+          "box_xyxy": [
+            396.614501953125,
+            227.43389892578125,
+            479.93328857421875,
+            517.5767822265625
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8343,
+          "box_xyxy": [
+            130.7748260498047,
+            240.7349395751953,
+            204.37998962402344,
+            508.54461669921875
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 62,
+      "time_seconds": 6.2,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.37872314453125,
+            137.6111602783203,
+            475.88616943359375,
+            450.05841064453125
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97515869140625,
+            235.9851837158203,
+            145.1370391845703,
+            534.6526489257812
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8471,
+          "box_xyxy": [
+            396.6224365234375,
+            227.4254150390625,
+            479.9381103515625,
+            517.6004028320312
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8336,
+          "box_xyxy": [
+            130.76913452148438,
+            240.7286834716797,
+            204.38211059570312,
+            508.53912353515625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 64,
+      "time_seconds": 6.4,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.38604736328125,
+            137.6105499267578,
+            476.02490234375,
+            450.06622314453125
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.621337890625,
+            227.392578125,
+            479.9371337890625,
+            517.6010131835938
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.7694091796875,
+            240.72833251953125,
+            204.38092041015625,
+            508.5394287109375
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 66,
+      "time_seconds": 6.6,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.3858642578125,
+            137.61041259765625,
+            476.02984619140625,
+            450.0677490234375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.6221923828125,
+            227.39837646484375,
+            479.93731689453125,
+            517.601318359375
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.76943969726562,
+            240.7283477783203,
+            204.38088989257812,
+            508.53936767578125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 68,
+      "time_seconds": 6.8,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.38616943359375,
+            137.6099853515625,
+            476.0174560546875,
+            450.06976318359375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97494888305664,
+            235.984375,
+            145.1368408203125,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.6219177246094,
+            227.396484375,
+            479.9372863769531,
+            517.6007690429688
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.7696533203125,
+            240.7282257080078,
+            204.3809814453125,
+            508.53936767578125
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 70,
+      "time_seconds": 7.0,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.390716552734375,
+            137.6092071533203,
+            475.99188232421875,
+            450.07318115234375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.974884033203125,
+            235.98431396484375,
+            145.13674926757812,
+            534.65234375
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8468,
+          "box_xyxy": [
+            396.6240234375,
+            227.39501953125,
+            479.93719482421875,
+            517.5975341796875
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8336,
+          "box_xyxy": [
+            130.7696990966797,
+            240.727783203125,
+            204.3810577392578,
+            508.5396728515625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 72,
+      "time_seconds": 7.2,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8834,
+          "box_xyxy": [
+            13.3590087890625,
+            137.58251953125,
+            476.3138427734375,
+            450.0989990234375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.8641,
+          "box_xyxy": [
+            28.972747802734375,
+            235.99432373046875,
+            145.13453674316406,
+            534.6343994140625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8461,
+          "box_xyxy": [
+            396.614501953125,
+            227.43389892578125,
+            479.93328857421875,
+            517.5767822265625
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8343,
+          "box_xyxy": [
+            130.7748260498047,
+            240.7349395751953,
+            204.37998962402344,
+            508.54461669921875
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 74,
+      "time_seconds": 7.4,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.37872314453125,
+            137.6111602783203,
+            475.88616943359375,
+            450.05841064453125
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97515869140625,
+            235.9851837158203,
+            145.1370391845703,
+            534.6526489257812
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8471,
+          "box_xyxy": [
+            396.6224365234375,
+            227.4254150390625,
+            479.9381103515625,
+            517.6004028320312
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8336,
+          "box_xyxy": [
+            130.76913452148438,
+            240.7286834716797,
+            204.38211059570312,
+            508.53912353515625
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 76,
+      "time_seconds": 7.6,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.38604736328125,
+            137.6105499267578,
+            476.02490234375,
+            450.06622314453125
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.621337890625,
+            227.392578125,
+            479.9371337890625,
+            517.6010131835938
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.7694091796875,
+            240.72833251953125,
+            204.38092041015625,
+            508.5394287109375
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 78,
+      "time_seconds": 7.8,
+      "counts": {
+        "bus": 1,
+        "person": 3
+      },
+      "detections": [
+        {
+          "track_id": 7,
+          "label": "bus",
+          "confidence": 0.8833,
+          "box_xyxy": [
+            13.3858642578125,
+            137.61041259765625,
+            476.02984619140625,
+            450.0677490234375
+          ]
+        },
+        {
+          "track_id": 8,
+          "label": "person",
+          "confidence": 0.864,
+          "box_xyxy": [
+            28.97500991821289,
+            235.984375,
+            145.13693237304688,
+            534.652587890625
+          ]
+        },
+        {
+          "track_id": 9,
+          "label": "person",
+          "confidence": 0.8469,
+          "box_xyxy": [
+            396.6221923828125,
+            227.39837646484375,
+            479.93731689453125,
+            517.601318359375
+          ]
+        },
+        {
+          "track_id": 10,
+          "label": "person",
+          "confidence": 0.8335,
+          "box_xyxy": [
+            130.76943969726562,
+            240.7283477783203,
+            204.38088989257812,
+            508.53936767578125
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Detection observations only. A missing detection does not prove a physical disappearance. Left/right uses 2D box centers."
+}
